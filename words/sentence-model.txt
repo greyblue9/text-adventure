@@ -1,0 +1,45 @@
+
+
+
+
+
+VERB
+1 [
+	[NOUN-PHRASE = DO (or IO if NOUN-PHRASE follows)]
+	["to"] [NOUN-PHRASE = IO]
+	[
+		[PREP] [NOUN-PHRASE] as PREP-PHRASE if has DO
+		[PREP] as PREP-PHRASE otherwise
+	]
+	[ADV] [NOUN-PHRASE] as ADV-PHRASE
+] ... repeat 1
+
+
+
+action(verb, doNounPhrase, ioNounPhrase, prep, prepNounPhrase, adv, advNounPhrase)
+
+
+throw the red ball at the computer
+--> action('throw', ['red', ball'], null, 'at', ['computer'])
+
+put the big shoe under the bed
+--> action('put', ['big', 'shoe'], null, 'under', ['bed'])
+
+open the crate
+--> action('open', ['crate'])
+
+give owl the food
+--> action('give', ['food'], ['owl'])
+
+give food to the owl
+--> action('give', ['food'], ['owl'])
+
+open the door using the small key
+--> action('open', ['door'], null, null, null, 'using', ['small', 'key'])
+
+stomp on the flame
+
+open up the box
+
+jump over the fence
+

@@ -1,0 +1,112 @@
+
+#   _______________________
+#__/ Clover valley house   \______________________________
+
+@game
+	@start			davids_room
+
+@area
+    @name           davids_room
+    @title          David's Bedroom
+    @description    You are standing in a small bedroom, which quite obviously belongs to a college student. There are clothes covering half the floor, and a twin-sized mattress sits unadornedly on the left side. In front of you is a cheap flat-pack desk (probably from Wal-Mart). Behind the desk, the monotony of the walls is interrupted by a window. You notice that the window is covered by a temporary paper shade. A door to the east leads back to the hallway.
+    @objects        computer, paper_shade
+    @exits
+        @door @east hallway
+        
+@area
+    @name           kyles_room
+    @title          Kyle's Bedroom
+    @description    You find yourself in an empty bedroom. Besides the carpet on the floor, there's not much to look at here. The resident must have moved out (probably graduated).
+    @exits
+        @door @west hallway
+        
+@area
+    @name           chris_room
+    @title          Chris' Bedroom
+    @description    You stand in a small bedroom, which probably belongs to a chemical engineer. The desk looks like it can't decide whether it wants to be messy or immaculate, probably a reflection of its user. Surprisingly, there is an actual full-size bed butted up against the side of the desk. There's also a large rotating chair in the middle. It's hard to maneuver in here!
+    @objects        bed, periodic_table
+    @exits
+        @door @south hallway
+        
+@area
+    @name           jerrys_room
+    @title          Jerry's Bedroom
+    @description    You are standing in a mid-sized bedroom. On one side of the room sits a large desk, cluttered with a jumble of computing equipment and papers. On the other side of the room, you find a large bed. There doesn't seem to be a whole lot else here!
+    @objects        bed
+    @exits
+        @door @south hallway
+
+@area
+    @name           hallway
+    @title          Hallway
+    @description    You are standing in a short hallway with a closet. There are bedroom doors at the east and west ends of the hallway, and two on the north wall. On the opposite wall, there is a closet with what appears to be a jury-rigged doorbell. A stairway leads back down to the first floor.
+    @exits
+        @door @west davids_room
+        @door @east kyles_room
+        @door @north @left chris_room
+        @door @north @right jerrys_room
+        @stairs @down sitting_room
+        
+@area
+    @name           sitting_room
+    @title          Sitting room
+    @description    You're in what seems to be the main room of the townhouse (the sitting room). There is a cheap-looking couch and a TV on a stand.
+    @objects        wii_game
+    @exits
+        @up @stairs hallway
+
+@object
+    @name           computer
+    @title          @a computer
+    @tagline        On top of the desk sits a computer.
+    @description    The computer looks pretty modern--there are two large LCD monitors connected to it, side-by-side. It's turned on and there is a sticky note on the desktop: "finish game." You are a little puzzled.
+    @nouns			computer
+    @carry?         @no It's called a desktop for a reason.
+    
+@object
+    @name           bed
+    @title          @a bed
+    @description    You're surprised to find such a large bed in a room belonging to a college student.
+    @nouns			bed
+    @carry?         @no
+    
+@object
+    @name           periodic_table
+    @title          @a periodic table
+    @tagline        There is a periodic table plastered on the wall.
+    @description    It's a periodic table, alright. It's got everything from hydrogen to radon, including all the made-up elements such as lawrencium. This one is super shiny!
+    @nouns			table
+    @adjs			periodic
+    @carry?         @yes You roll up the periodic table and stow it away in your jeans.
+
+@object
+    @name           paper_shade
+    @title          @a paper shade
+    @description    It's a temporary shade. Nothing special about it, really.
+    @nouns			shade, blinds, blind
+    @adjs			paper, temporary, window
+    @carry?         @yes You shove the paper shade into your trousers.
+    
+@object
+    @name           wii_game
+    @title          @a Wii game
+    @nouns			game, disc, cd
+    @adjs			wii, game
+    @tagline        A Wii game sits on top of the TV.
+    @description    It's a Wii game disc labeled "Wii Sports."
+    @carry?         @yes You shove the Wii disc into your back pants pocket. Better not sit down on anything hard!
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,86 @@
+
+
+body
+{
+    margin: 0;
+
+    background: black;
+    font-family: consolas,courier,monospace;
+    font-size: 12pt;
+}
+
+pre
+{
+	font-family: consolas;
+	color: #ffffb3;
+	font-size: 14px;
+}
+
+#infobar
+{
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    height: 20px;
+
+    background: white;
+    font-weight: bold;
+}
+
+#score
+{
+    float: right;
+    margin-right: 8px;
+}
+
+.clear
+{
+    clear: both;
+}
+
+#main
+{
+    padding: 0px 8px;
+
+    background: black;
+    color: white;
+}
+
+#prompt_arrows
+{
+    text-align: left;
+
+    color: white;
+}
+
+
+
+#prompt
+{
+    width: 100%;
+    border: 0 none;
+	outline: none;
+
+    background: none repeat scroll 0% 0% black;
+
+    color: white;
+    font-weight: bold;
+    font-family: consolas;
+    font-size: 12pt;
+	margin: 0;
+	padding: 0;
+}
+
+
+.command
+{
+	color: #82c0ff;
+	color: #ff5e5e;
+	color: #fff;
+	margin-top: 4px;
+}
+
+.command span
+{
+	font-weight: bold;
+}
