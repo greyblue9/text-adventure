@@ -1,7 +1,10 @@
 Text Adventure
 ==============
 
-A parser-based game engine for interactive fiction (Zork-style text-based adventure) written in PHP. Partially motivated by a desire to learn how to write a classic syntax parser (for the game description file), and also a natural language parser (for user input).  
+A parser-based game engine for interactive fiction (Zork-style text-based 
+adventure) written in PHP. Partially motivated by a desire to learn how to write
+a classic syntax parser (for the game description file), and also a natural
+language parser (for user input).  
 
 Example of game syntax it can parse:
 
@@ -19,7 +22,8 @@ Example of game syntax it can parse:
 	@object
 	    @name           bed
 	    @title          @a bed
-	    @description    You're surprised to find such a large bed in a room 						belonging to a college student.
+	    @description    You're surprised to find such a large bed in a room 
+						belonging to a college student.
 	    @nouns			bed
 	    @carry?         @no
 	    
@@ -27,7 +31,8 @@ Example of game syntax it can parse:
 	    @name           periodic_table
 	    @title          @a periodic table
 	    @tagline        There is a periodic table plastered on the wall.
-	    @description    It's a periodic table, alright. It's got everything from 					hydrogen to radon, including all the made-up elements 
+	    @description    It's a periodic table, alright. It's got everything from 
+						hydrogen to radon, including all the made-up elements 
 						such as lawrencium. This one is super shiny!
 	    @nouns			table
 	    @adjs			periodic
