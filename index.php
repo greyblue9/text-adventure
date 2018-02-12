@@ -1,26 +1,19 @@
 <?php
+    require_once('Tokenizer.class.inc');
+    require_once('Parser.class.inc');
+    require_once('Executive.class.inc');
 
-
-
-require_once('Tokenizer.class.inc');
-require_once('Parser.class.inc');
-require_once('Executive.class.inc');
-
-
-
-session_start();
-
-
-if (isset($_GET['reset'])) 
-{
-    session_destroy();
     session_start();
-}
 
-$tokenizer = new Tokenizer(file_get_contents('main.game'));
+    if (isset($_GET['reset'])) 
+    {
+        session_destroy();
+        session_start();
+    }
 
-$parser = new Parser($tokenizer);
+    $tokenizer = new Tokenizer(file_get_contents('main.game'));
 
+    $parser = new Parser($tokenizer);
 ?>
 
 
